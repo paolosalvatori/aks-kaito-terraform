@@ -24,11 +24,11 @@ products:
 - azure-monitor
 - azure-log-analytics
 - azure-virtual-machines
-name:  Deploy Kaito using Terraform on Azure Kubernetes Service (AKS)
+name:  Deploy Kaito on AKS using Terraform
 description: This project demonstrates the process of deploying Kaito on AKS using Terraform, creating a Falcon 7B Instruct model hosted on AKS using Kaito, and utilizing Chainlit to develop a chat interface that interacts with the model's inference endpoint.
 ---
 
-# Deploy Kaito using Terraform on Azure Kubernetes Service (AKS)
+# Deploy Kaito on AKS using Terraform
 
 The [Kubernetes AI toolchain operator (Kaito)](https://learn.microsoft.com/en-us/azure/aks/ai-toolchain-operator) is a Kubernetes operator that simplifies the experience of running OSS AI models like [Falcon](https://huggingface.co/tiiuae) and [Llama2](https://github.com/meta-llama/llama) on your AKS cluster. You can deploy Kaito on your AKS cluster as a managed add-on for[Azure Kubernetes Service (AKS)](https://docs.microsoft.com/en-us/azure/aks/intro-kubernetes). The [Kubernetes AI toolchain operator (Kaito)](https://learn.microsoft.com/en-us/azure/aks/ai-toolchain-operator) uses [Karpenter](https://karpenter.sh/) to automatically provision the necessary GPU nodes based on a specification provided in the Workspace custom resource definition (CRD) and sets up the inference server as an endpoint for your AI models. This add-on reduces onboarding time and allows you to focus on AI model usage and development rather than infrastructure setup.
 
