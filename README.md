@@ -387,7 +387,7 @@ Here is a description of the code above:
 - `azurerm_federated_identity_credential.Kaito_federated_identity_credential`: Creates the federated identity credential between the Kaito managed identity and the service account used by the Kaito controllers in the `kube-system` namespace, particularly the `Kaito-gpu-provisioner` controller.
 - `azurerm_role_assignment.Kaito_identity_contributor_assignment`: Assigns the `Contributor` role to the Kaito managed identity with the AKS resource group as the scope.
 
-## Create the Kaito Workspace via Terraform
+## Create the Kaito Workspace using Terraform
 
 To create the Kaito workspace, you can utilize the [kubectl_manifest](https://registry.terraform.io/providers/gavinbunney/kubectl/latest/docs/resources/kubectl_manifest) resource from the [Kubectl Provider](https://registry.terraform.io/providers/gavinbunney/kubectl/latest/docs) in the following manner.
 
