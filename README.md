@@ -122,7 +122,7 @@ The [Kubernetes AI toolchain operator (Kaito)](https://learn.microsoft.com/en-us
 
 Kaito follows the classic Kubernetes Custom Resource Definition (CRD)/controller design pattern. The user manages a workspace custom resource that describes the GPU requirements and the inference specification. Kaito controllers automate the deployment by reconciling the workspace custom resource.
 
-![Kaito Architecture](./images/Kaito-architecture.png)
+![Kaito Architecture](./images/kaito-architecture.png)
 
 The major components of Kaito include:
 
