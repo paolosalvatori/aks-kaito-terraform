@@ -192,7 +192,7 @@ For more information, see the following resources:
 - [API Reference](https://docs.chainlit.io/api-reference/on-message)
 - [Cookbook](https://docs.chainlit.io/examples/cookbook)
 
-## Deploy Kaito via Azure CLI
+## Deploy Kaito using Azure CLI
 
 As stated in the [documentation](https://learn.microsoft.com/en-us/azure/aks/ai-toolchain-operator), enabling the Kubernetes AI toolchain operator add-on in AKS creates a managed identity named `ai-toolchain-operator-<aks-cluster-name>`. This managed identity is utilized by the GPU provisioner controller to provision GPU node pools within the managed AKS cluster via [Karpenter](https://karpenter.sh/). To ensure proper functionality, manual configuration of the necessary permissions is required. Follow the steps outlined in the following sections to successfully install Kaito through the AKS add-on.
 
@@ -318,7 +318,7 @@ As stated in the [documentation](https://learn.microsoft.com/en-us/azure/aks/ai-
 > **NOTE**  
 > As you track the live resource changes in your workspace, the machine readiness can take up to 10 minutes, and workspace readiness up to 20 minutes.
 
-## Deploy Kaito via Terraform
+## Deploy Kaito using Terraform
 
 At the time of this writing, the [azurerm_kubernetes_cluster](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/kubernetes_cluster) resource in the [AzureRM](https://registry.terraform.io/providers/hashicorp/azurerm/latest) Terraform provider for Azure does not have a property to enable the add-on and install the [Kubernetes AI toolchain operator (Kaito)](https://learn.microsoft.com/en-us/azure/aks/ai-toolchain-operator) on your AKS cluster. However, you can use the [AzAPI Provider](https://registry.terraform.io/providers/Azure/azapi/latest/docs) to deploy Kaito on your AKS cluster. The AzAPI provider is a thin layer on top of the Azure ARM REST APIs. It complements the [AzureRM](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs) provider by enabling the management of Azure resources that are not yet or may never be supported in the AzureRM provider, such as private/public preview services and features. The following resources replicate the actions performed by the Azure CLI commands mentioned in the previous section.
 
